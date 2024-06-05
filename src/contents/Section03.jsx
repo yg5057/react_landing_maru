@@ -110,12 +110,14 @@ const StyledImg = styled.div`
 `;
 
 const Section03 = () => {
-  const sectionRef = useScrollAnimation(slideUpAnimation);
   const isTablet = useMediaQuery('(max-width: 1024px)');
   const isMobile = useMediaQuery('(max-width: 768px)');
+  const sectionRef = useRef(null);
+
+  useScrollAnimation(isMobile ? null : slideUpAnimation, sectionRef);
 
   return (
-    <SectionWrapper ref={sectionRef} tablet={isTablet} mobile={isMobile}>
+    <SectionWrapper ref={!isMobile ? sectionRef : null} tablet={isTablet} mobile={isMobile}>
       <CardLarge>
         <CardContsWrapper >
           <CardTextWrapper>
