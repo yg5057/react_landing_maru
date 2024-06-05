@@ -45,7 +45,7 @@ const Btn = styled.div`
 const Section04 = () => {
   const isTablet = useMediaQuery('(max-width: 1024px)');
   const isMobile = useMediaQuery('(max-width: 768px)');
-  const openURl = () => {  window.open('https://www.google.com', '_blank'); };
+  const openURl = () => {  window.open('https://walla.my/survey/qziZ4lbVM2ymy8eEtfJj', '_blank'); };
 
 
   return (
