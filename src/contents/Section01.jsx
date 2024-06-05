@@ -32,7 +32,7 @@ const SectionWrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: ${({ mobile }) => (mobile ? '8rem' : '10rem')};
+  gap: ${({ mobile }) => (mobile ? '6rem' : '10rem')};
 `;
 const Span = styled.span`
     color: var(--Mandarin-Orange-600, #F04F0F);
