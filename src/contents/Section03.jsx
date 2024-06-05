@@ -115,9 +115,9 @@ const Section03 = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
-    <SectionWrapper tablet={isTablet} mobile={isMobile}>
+    <SectionWrapper ref={sectionRef} tablet={isTablet} mobile={isMobile}>
       <CardLarge>
-        <CardContsWrapper ref={sectionRef} >
+        <CardContsWrapper >
           <CardTextWrapper>
             {isMobile ? (
               <CardContsText>
