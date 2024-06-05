@@ -29,7 +29,7 @@ const StyledCard = styled.div`
   }
   @media (max-width: 768px) {  // mobile
     max-width: 35rem;
-    max-height: 35.5rem;
+    max-height: 45rem;
     gap: 3.4rem;
   }
 `;
