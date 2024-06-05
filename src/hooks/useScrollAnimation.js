@@ -9,7 +9,7 @@ const useScrollAnimation = (keyframes, threshold = 0.1) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !animationStarted) {
-            ref.current.style.animation = `${keyframes.getName()} 2s ease forwards`;
+            ref.current.style.animation = `${keyframes.getName()} 1s ease forwards`;
           setAnimationStarted(true);
         }
       },
