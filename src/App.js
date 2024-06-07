@@ -9,6 +9,7 @@ function App() {
     <MainLayout>
       <Routes>
         <Route path="/" element={<LandingMain />} />
+        <Route path="/survey" element={<LandingMain />} />
       </Routes>
     </MainLayout>
   );
