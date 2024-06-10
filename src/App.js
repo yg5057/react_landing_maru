@@ -1,10 +1,14 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 
 import MainLayout from './layout/Main';
 import LandingMain from './pages/LandingMain'
 
 function App() {
+  const navigate = useNavigate();
+
+  useEffect(() => { navigate('/survey'); }, [navigate]);
+
   return (
     <MainLayout>
       <Routes>
